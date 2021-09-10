@@ -1,19 +1,18 @@
 ﻿using ESourcing.Sourcing.Entities;
 using ESourcing.Sourcing.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace ESourcing.Sourcing.Controllers
+namespace Esourcing.Sourcing.Controllers
 {
-    [Route("api/v1/{controller}")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class BidController : ControllerBase
     {
         private readonly IBidRepository _bidRepository;
+
         public BidController(IBidRepository bidRepository)
         {
             _bidRepository = bidRepository;

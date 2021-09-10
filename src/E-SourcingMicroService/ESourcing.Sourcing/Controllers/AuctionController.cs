@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ESourcing.Sourcing.Controllers
 {
-    [Route("api/v1/{controller}")]
+    [Route("api/v1/[controller]")]
     [ApiController]
     public class AuctionController : ControllerBase
     {

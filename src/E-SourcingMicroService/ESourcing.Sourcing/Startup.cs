@@ -41,6 +41,8 @@ namespace ESourcing.Sourcing
             services.AddTransient<ISourcingContext, SourcingContext>();
             services.AddTransient<IAuctionRepository, AuctionRepository>();
             services.AddTransient<IBidRepository, BidRepository>();
+
+            services.AddAutoMapper(typeof(Startup));
             #endregion
 
             #region Swagger Dependencies

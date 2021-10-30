@@ -1,7 +1,7 @@
-﻿using Ordering.Domain.Entitties.Base;
+﻿using Ordering.Domain.Entities.Base;
 using System;
 
-namespace Ordering.Domain.Entitties
+namespace Ordering.Domain.Entities
 {
     public class Order: Entity
     {

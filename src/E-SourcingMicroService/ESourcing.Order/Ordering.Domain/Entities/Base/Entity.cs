@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Ordering.Domain.Entitties.Base
+namespace Ordering.Domain.Entities.Base
 {
     public abstract class Entity : IEntityBase
     {

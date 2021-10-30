@@ -1,4 +1,4 @@
-﻿using Ordering.Domain.Entitties;
+﻿using Ordering.Domain.Entities;
 using Ordering.Domain.Repositories.Base;
 using System.Collections.Generic;
 using System.Threading.Tasks;

@@ -13,9 +13,9 @@ namespace Ordering.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<OrderContext>(opt => opt.UseInMemoryDatabase(databaseName: "InMemoryDb"),
-                                                ServiceLifetime.Singleton,
-                                                ServiceLifetime.Singleton);
+            //services.AddDbContext<OrderContext>(opt => opt.UseInMemoryDatabase(databaseName: "InMemoryDb"),
+            //                                    ServiceLifetime.Singleton,
+            //                                    ServiceLifetime.Singleton);
 
             services.AddDbContext<OrderContext>(options =>
                     options.UseSqlServer(

@@ -41,6 +41,9 @@ namespace ESourcing.Order
 
             #endregion
 
+            // Add AutoMapper
+            services.AddAutoMapper(typeof(Startup));
+
             #region EventBus
 
             services.AddSingleton<IRabbitMQPersistentConnection>(sp =>

@@ -51,3 +51,19 @@ services:
     ports:
       - "8001:80"
 
+
+  esourcing.order:
+    container_name: esourcingorder
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings:OrderConnection=Server=sourcingsqldb;Database=OrderDb;User Id=sa;Password=Odb12345678"
+      - "EventBus:HostName=rabbitmq"
+    depends_on:
+      - sourcingsqldb
+      - rabbitmq
+    volumes:
+      - ${HOME}/.microsoft/usersecrets/:/root/.microsoft/usersecrets
+      - ${HOME}/.aspnet/https:/root/.aspnet/https/
+    ports:
+      - "8002:80"
+

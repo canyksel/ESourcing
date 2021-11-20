@@ -37,11 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESourcing.Order", "ESourcin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESourcing.APIGateway", "ESourcing.APIGateway\ESourcing.APIGateway.csproj", "{BDB7C055-5766-4EEF-BC26-E619CC3BD6EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Esourcing.UI", "Esourcing.UI\Esourcing.UI.csproj", "{F4EA37BB-6B40-4D7F-A078-B7D9905026DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESourcing.UI", "Esourcing.UI\ESourcing.UI.csproj", "{F4EA37BB-6B40-4D7F-A078-B7D9905026DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESourcing.Core", "ESourcing.Core\ESourcing.Core.csproj", "{F4A285D4-7084-4A02-ADF7-D5ECB6AF9642}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESourcing.Core", "ESourcing.Core\ESourcing.Core.csproj", "{F4A285D4-7084-4A02-ADF7-D5ECB6AF9642}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESourcing.Infrastructure", "ESourcing.Infrastructure\ESourcing.Infrastructure.csproj", "{0DDF68CF-6E6A-4EA4-A05B-5D4E2347416C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ESourcing.Infrastructure", "ESourcing.Infrastructure\ESourcing.Infrastructure.csproj", "{0DDF68CF-6E6A-4EA4-A05B-5D4E2347416C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

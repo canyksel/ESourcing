@@ -40,5 +40,7 @@ namespace ESourcing.UI.ViewModel
         [Required(ErrorMessage = "Seller is required")]
         [Display(Name = "Is Seller")]
         public bool IsSeller { get; set; }
+
+        public int UserSelectTypeId { get; set; }
     }
 }

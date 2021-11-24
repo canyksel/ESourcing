@@ -1,10 +1,10 @@
+using Esourcing.UI.Clients;
 using ESourcing.Core.Entities;
 using ESourcing.Core.Repositories;
 using ESourcing.Core.Repositories.Base;
 using ESourcing.Infrastructure.Data;
 using ESourcing.Infrastructure.Repository;
 using ESourcing.Infrastructure.Repository.Base;
-using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -12,7 +12,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
 
 namespace Esourcing.UI
 {
@@ -61,6 +60,11 @@ namespace Esourcing.UI
                 options.LoginPath = $"/Home/Login";
                 options.LogoutPath = $"/Home/Logout";
             });
+
+            services.AddHttpClient();
+
+            services.AddHttpClient<ProductClient>();
+            services.AddHttpClient<AuctionClient>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

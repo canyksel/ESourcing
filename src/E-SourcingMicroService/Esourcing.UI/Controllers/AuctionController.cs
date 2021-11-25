@@ -1,12 +1,14 @@
 ﻿using Esourcing.UI.Clients;
 using Esourcing.UI.ViewModel;
 using ESourcing.Core.Repositories;
+using ESourcing.Core.ResultModels;
+using ESourcing.UI.ViewModel;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Threading.Tasks;
 
-namespace ESourcing.UI.Controllers
+namespace Esourcing.UI.Controllers
 {
     public class AuctionController : Controller
     {
@@ -22,6 +24,7 @@ namespace ESourcing.UI.Controllers
             _auctionClient = auctionClient;
             _bidClient = bidClient;
         }
+
 
         public async Task<IActionResult> Index()
         {
@@ -43,14 +46,14 @@ namespace ESourcing.UI.Controllers
             ViewBag.UserList = userList;
 
             return View();
-
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(AuctionViewModel model)
         {
-            model.Status = 1;
+            model.Status = 0;
             model.CreatedAt = DateTime.Now;
+            model.IncludedSellers.Add(model.SellerId);
             var createAuction = await _auctionClient.CreateAuction(model);
             if (createAuction.IsSuccess)
                 return RedirectToAction("Index");
@@ -73,5 +76,21 @@ namespace ESourcing.UI.Controllers
 
             return View(model);
         }
+
+        [HttpPost]
+        public async Task<Result<string>> SendBid(BidViewModel model)
+        {
+            model.CreateAt = DateTime.Now;
+            var sendBidResponse = await _bidClient.SendBid(model);
+            return sendBidResponse;
+        }
+
+        [HttpPost]
+        public async Task<Result<string>> CompleteBid(string id)
+        {
+            var completeBidResponse = await _auctionClient.CompleteBid(id);
+            return completeBidResponse;
+        }
+
     }
 }

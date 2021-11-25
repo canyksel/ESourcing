@@ -1,5 +1,4 @@
-﻿using Esourcing.UI.ViewModel;
-using ESourcing.Core.Common;
+﻿using ESourcing.Core.Common;
 using ESourcing.Core.ResultModels;
 using ESourcing.UI.ViewModel;
 using Newtonsoft.Json;

@@ -1,5 +1,6 @@
 ﻿using ESourcing.Core.Entities;
 using ESourcing.UI.ViewModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
@@ -41,7 +42,7 @@ namespace Esourcing.UI.Controllers
 
                     if (result.Succeeded)
                     {
-                        //HttpContext.Session.SetString("IsAdmin", user.IsAdmin.ToString());
+                        HttpContext.Session.SetString("IsAdmin", user.IsAdmin.ToString());
                         //return RedirectToAction("Index");
                         return LocalRedirect(returnUrl);
                     }

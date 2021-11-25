@@ -99,7 +99,7 @@ namespace ESourcing.Sourcing
                         .AllowAnyMethod()
                         .AllowAnyHeader()
                         .AllowCredentials()
-                        .WithOrigins("https://localhost:44398");
+                        .WithOrigins("https://localhost:34356");
             }));
 
             services.AddSignalR();

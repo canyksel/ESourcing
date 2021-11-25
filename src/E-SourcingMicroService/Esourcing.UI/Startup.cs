@@ -65,6 +65,7 @@ namespace Esourcing.UI
 
             services.AddHttpClient<ProductClient>();
             services.AddHttpClient<AuctionClient>();
+            services.AddHttpClient<BidClient>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

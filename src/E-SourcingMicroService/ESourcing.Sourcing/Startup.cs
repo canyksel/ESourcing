@@ -30,13 +30,12 @@ namespace ESourcing.Sourcing
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
             services.AddControllers();
 
             services.Configure<SourcingDatabaseSettings>(Configuration.GetSection(nameof(SourcingDatabaseSettings)));
 
             services.AddSingleton<ISourcingDatabaseSettings>(sp =>
-            sp.GetRequiredService<IOptions<SourcingDatabaseSettings>>().Value);
+                sp.GetRequiredService<IOptions<SourcingDatabaseSettings>>().Value);
 
             #region Project Dependencies
             services.AddTransient<ISourcingContext, SourcingContext>();
@@ -86,7 +85,6 @@ namespace ESourcing.Sourcing
                 }
 
                 return new DefaultRabbitMQPersistentConnection(factory, retryCount, logger);
-
             });
 
             services.AddSingleton<EventBusRabbitMQProducer>();
@@ -103,7 +101,6 @@ namespace ESourcing.Sourcing
             }));
 
             services.AddSignalR();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

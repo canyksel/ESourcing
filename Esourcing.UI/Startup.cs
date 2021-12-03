@@ -1,4 +1,4 @@
-using Esourcing.UI.Clients;
+using ESourcing.UI.Clients;
 using ESourcing.Core.Entities;
 using ESourcing.Core.Repositories;
 using ESourcing.Core.Repositories.Base;
@@ -14,7 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 
-namespace Esourcing.UI
+namespace ESourcing.UI
 {
     public class Startup
     {

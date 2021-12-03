@@ -5,7 +5,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 
-namespace Esourcing.UI
+namespace ESourcing.UI
 {
     public class Program
     {

@@ -20,7 +20,7 @@ services:
     image: ${DOCKER_REGISTRY-}esourcingsourcing
     build:
       context: .
-      dockerfile: Esourcing.Sourcing/Dockerfile
+      dockerfile: ESourcing.Sourcing/Dockerfile
 
   esourcing.order:
     image: ${DOCKER_REGISTRY-}esourcingorder

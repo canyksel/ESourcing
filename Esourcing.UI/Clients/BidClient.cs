@@ -1,4 +1,4 @@
-﻿using Esourcing.UI.ViewModel;
+﻿using ESourcing.UI.ViewModel;
 using ESourcing.Core.Common;
 using ESourcing.Core.ResultModels;
 using Newtonsoft.Json;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Esourcing.UI.Clients
+namespace ESourcing.UI.Clients
 {
     public class BidClient
     {

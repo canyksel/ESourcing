@@ -1,13 +1,13 @@
-﻿using Esourcing.Sourcing.Data.Interface;
-using Esourcing.Sourcing.Entities;
-using Esourcing.Sourcing.Repositories.Interfaces;
+﻿using ESourcing.Sourcing.Data.Interface;
+using ESourcing.Sourcing.Entities;
+using ESourcing.Sourcing.Repositories.Interfaces;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Esourcing.Sourcing.Repositories
+namespace ESourcing.Sourcing.Repositories
 {
     public class AuctionRepository : IAuctionRepository
     {

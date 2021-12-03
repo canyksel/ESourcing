@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
 
-namespace Esourcing.Sourcing.Hubs
+namespace ESourcing.Sourcing.Hubs
 {
     public class AuctionHub :Hub
     {

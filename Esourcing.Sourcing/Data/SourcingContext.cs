@@ -1,13 +1,13 @@
-﻿using Esourcing.Sourcing.Data.Interface;
-using Esourcing.Sourcing.Entities;
-using Esourcing.Sourcing.Settings;
+﻿using ESourcing.Sourcing.Data.Interface;
+using ESourcing.Sourcing.Entities;
+using ESourcing.Sourcing.Settings;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Esourcing.Sourcing.Data
+namespace ESourcing.Sourcing.Data
 {
     public class SourcingContext : ISourcingContext
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Esourcing.UI.ViewModel
+namespace ESourcing.UI.ViewModel
 {
     public class AuctionBidsViewModel
     {

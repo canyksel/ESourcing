@@ -1,8 +1,8 @@
-using Esourcing.Sourcing.Data;
-using Esourcing.Sourcing.Data.Interface;
-using Esourcing.Sourcing.Repositories;
-using Esourcing.Sourcing.Repositories.Interfaces;
-using Esourcing.Sourcing.Settings;
+using ESourcing.Sourcing.Data;
+using ESourcing.Sourcing.Data.Interface;
+using ESourcing.Sourcing.Repositories;
+using ESourcing.Sourcing.Repositories.Interfaces;
+using ESourcing.Sourcing.Settings;
 using EventBusRabbitMQ;
 using EventBusRabbitMQ.Producer;
 using Microsoft.AspNetCore.Builder;
@@ -16,9 +16,9 @@ using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using RabbitMQ.Client;
 using AutoMapper;
-using Esourcing.Sourcing.Hubs;
+using ESourcing.Sourcing.Hubs;
 
-namespace Esourcing.Sourcing
+namespace ESourcing.Sourcing
 {
     public class Startup
     {

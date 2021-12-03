@@ -1,12 +1,12 @@
 ﻿using AutoMapper;
-using Esourcing.Sourcing.Entities;
+using ESourcing.Sourcing.Entities;
 using EventBusRabbitMQ.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Esourcing.Sourcing.Mapping
+namespace ESourcing.Sourcing.Mapping
 {
     public class SourcingMapping : Profile
     {

@@ -1,4 +1,4 @@
-﻿namespace Esourcing.UI.ViewModel
+﻿namespace ESourcing.UI.ViewModel
 {
     public class ProductViewModel
     {

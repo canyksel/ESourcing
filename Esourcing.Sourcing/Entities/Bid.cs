@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Esourcing.Sourcing.Entities
+namespace ESourcing.Sourcing.Entities
 {
     public class Bid
     {

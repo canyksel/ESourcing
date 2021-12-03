@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Esourcing.Sourcing.Entities;
-using Esourcing.Sourcing.Repositories.Interfaces;
+using ESourcing.Sourcing.Entities;
+using ESourcing.Sourcing.Repositories.Interfaces;
 using EventBusRabbitMQ.Core;
 using EventBusRabbitMQ.Events;
 using EventBusRabbitMQ.Producer;
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Esourcing.Sourcing.Controllers
+namespace ESourcing.Sourcing.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]

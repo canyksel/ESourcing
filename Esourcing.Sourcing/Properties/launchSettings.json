@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Esourcing.Sourcing": {
+    "ESourcing.Sourcing": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

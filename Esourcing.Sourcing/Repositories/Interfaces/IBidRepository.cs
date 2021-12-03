@@ -1,10 +1,10 @@
-﻿using Esourcing.Sourcing.Entities;
+﻿using ESourcing.Sourcing.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Esourcing.Sourcing.Repositories.Interfaces
+namespace ESourcing.Sourcing.Repositories.Interfaces
 {
     public interface IBidRepository
     {

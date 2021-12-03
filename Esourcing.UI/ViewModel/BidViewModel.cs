@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Esourcing.UI.ViewModel
+namespace ESourcing.UI.ViewModel
 {
     public class BidViewModel
     {

@@ -1,5 +1,5 @@
-﻿using Esourcing.UI.Clients;
-using Esourcing.UI.ViewModel;
+﻿using ESourcing.UI.Clients;
+using ESourcing.UI.ViewModel;
 using ESourcing.Core.Repositories;
 using ESourcing.Core.ResultModels;
 using Microsoft.AspNetCore.Http;
@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Esourcing.UI.Controllers
+namespace ESourcing.UI.Controllers
 {
     public class AuctionController : Controller
     {
